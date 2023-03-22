@@ -1,6 +1,13 @@
 <template>
-  <div class="header">
-    <h1 class="h1">Monster Slayer</h1>
+  <div class="container-fluid px-5 p  ">
+    <div class="row">      
+        <h1>Monster Slayer</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      .col
+    </div>
   </div>
 </template>
 <script>
@@ -10,13 +17,15 @@ export default {
 };
 </script>
 <style>
-.header {
+.container-fluid{
   background-color: rgb(162, 44, 44);
   position: relative;
+  text-align: center;
+  color: aliceblue;
+  padding-bottom:1.5% ;
 }
- .h1 {
-    padding-left: 50rem;
-    padding-top: 10rem;
-    color: white;
+.row{
+padding-top: -5%;
 }
+ 
 </style>
