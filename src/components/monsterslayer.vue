@@ -19,8 +19,25 @@ export default {
 };
 </script>
 <style>
-.container-fluid {
+.header {
+  background-color: rgb(5, 4, 4);
+  border-style: outset;
+  position: relative;
+  text-align: center;
+  color: aliceblue;
+  padding-bottom: 1.5%;
+}
+.center {
+  border-style: dashed;
   background-color: rgb(162, 44, 44);
+  position: relative;
+  text-align: center;
+  color: aliceblue;
+  padding-bottom: 1.5%;
+}
+.footer {
+  border-style: dashed;
+  background-color: rgb(10, 109, 41);
   position: relative;
   text-align: center;
   color: aliceblue;
