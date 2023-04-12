@@ -1,12 +1,14 @@
 <template>
-  <div class="container-fluid px-5 p  ">
-    <div class="row">      
-        <h1>Monster Slayer</h1>
-    </div>
-  </div>
-  <div class="container">
+  <div class="container mt-5 px-5 p header">
+    <h1>Saurav Branch</h1>
     <div class="row">
-      .col
+      <h1>Monster Slayer</h1>
+    </div>
+    <div class="row center">
+      <h1>Red Monster</h1>
+    </div>
+    <div class="row footer">
+      <h1>Green Monster</h1>
     </div>
   </div>
 </template>
@@ -17,15 +19,14 @@ export default {
 };
 </script>
 <style>
-.container-fluid{
+.container-fluid {
   background-color: rgb(162, 44, 44);
   position: relative;
   text-align: center;
   color: aliceblue;
-  padding-bottom:1.5% ;
+  padding-bottom: 1.5%;
 }
-.row{
-padding-top: -5%;
+.row {
+  padding-top: -5%;
 }
- 
 </style>
