@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid px-5 p  ">
     <div class="row">      
-        <h1>Monster Slayer</h1>
+      <h2>Piyush Dhiman</h2>
     </div>
   </div>
   <div class="container">
