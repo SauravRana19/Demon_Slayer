@@ -1,17 +1,11 @@
 <template>
-  <div class="container mt-5 px-5 p header">
-    <h1>Saurav Branch</h1>
+  <div class="container-fluid px-5 p  ">
+    <div class="row">      
+        <h1>Monster Slayer</h1>
+    </div>
+  </div>
+  <div class="container">
     <div class="row">
-      <h1>Monster Slayer</h1>
-    </div>
-    <div class="row center">
-      <h1>Red Monster</h1>
-    </div>
-    <div class="row footer">
-      <h1>Green Monster</h1>
-    </div>
-    <div class="row footer" style="background-color: blue">
-      <h1>Blue Monster</h1>
     </div>
   </div>
 </template>
@@ -22,16 +16,7 @@ export default {
 };
 </script>
 <style>
-.header {
-  background-color: rgb(5, 4, 4);
-  border-style: outset;
-  position: relative;
-  text-align: center;
-  color: aliceblue;
-  padding-bottom: 1.5%;
-}
-.center {
-  border-style: dashed;
+.container-fluid{
   background-color: rgb(162, 44, 44);
   position: relative;
   text-align: center;
