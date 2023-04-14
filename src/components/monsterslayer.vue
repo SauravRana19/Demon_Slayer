@@ -10,7 +10,7 @@
     <div class="row footer">
       <h1>Green Monster</h1>
     </div>
-    <div class="row footer" style="background-color: blue;">
+    <div class="row footer" style="background-color: blue">
       <h1>Blue Monster</h1>
     </div>
   </div>
