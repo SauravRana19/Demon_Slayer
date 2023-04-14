@@ -4,13 +4,13 @@
     <div class="row">
       <h1>Monster Slayer</h1>
     </div>
-    <div class="Red Monster">
+    <div class="RedMonster">
       <h1>Red Monster</h1>
     </div>
-    <div class="Green Monster">
+    <div class="GreenMonster">
       <h1>Green Monster</h1>
     </div>
-    <div class="Blue Monster">
+    <div class="BlueMonster">
       <h1>Blue Monster</h1>
     </div>
   </div>
@@ -30,7 +30,7 @@ export default {
   color: aliceblue;
   padding-bottom: 1.5%;
 }
-.Red Monster {
+.RedMonster {
   border-style: dashed;
   background-color: rgb(162, 44, 44);
   position: relative;
@@ -38,7 +38,7 @@ export default {
   color: aliceblue;
   padding-bottom: 1.5%;
 }
-.Green Monster {
+.GreenMonster {
   border-style: dashed;
   background-color: rgb(10, 109, 41);
   position: relative;
@@ -46,7 +46,7 @@ export default {
   color: aliceblue;
   padding-bottom: 1.5%;
 }
-.Blue Monster{
+.BlueMonster{
   border-style: dashed;
   background-color: rgb(26, 40, 196);
   position: relative;
