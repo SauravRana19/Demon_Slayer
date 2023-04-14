@@ -4,14 +4,14 @@
     <div class="row">
       <h1>Monster Slayer</h1>
     </div>
-    <div class="row center">
+    <div class="Red Monster">
       <h1>Red Monster</h1>
     </div>
-    <div class="row footer">
+    <div class="Green Monster">
       <h1>Green Monster</h1>
     </div>
-    <div class="row footer">
-      <h1>Green Monster</h1>
+    <div class="Blue Monster">
+      <h1>Blue Monster</h1>
     </div>
   </div>
 </template>
@@ -30,7 +30,7 @@ export default {
   color: aliceblue;
   padding-bottom: 1.5%;
 }
-.center {
+.Red Monster {
   border-style: dashed;
   background-color: rgb(162, 44, 44);
   position: relative;
@@ -38,9 +38,17 @@ export default {
   color: aliceblue;
   padding-bottom: 1.5%;
 }
-.footer {
+.Green Monster {
   border-style: dashed;
   background-color: rgb(10, 109, 41);
+  position: relative;
+  text-align: center;
+  color: aliceblue;
+  padding-bottom: 1.5%;
+}
+.Blue Monster{
+  border-style: dashed;
+  background-color: rgb(26, 40, 196);
   position: relative;
   text-align: center;
   color: aliceblue;
