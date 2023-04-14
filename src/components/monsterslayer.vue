@@ -1,7 +1,8 @@
 <template>
   <div class="container-fluid px-5 p  ">
-    <div class="row">      
+    <div class="row">
       <h2>Piyush Dhiman</h2>
+      <h2>saurav rana</h2>
     </div>
   </div>
   <div class="container">
@@ -13,19 +14,19 @@
 <script>
 export default {
   name: "monster-slayer",
-  data() {},
+  data() { },
 };
 </script>
 <style>
-.container-fluid{
+.container-fluid {
   background-color: rgb(162, 44, 44);
   position: relative;
   text-align: center;
   color: aliceblue;
-  padding-bottom:1.5% ;
+  padding-bottom: 1.5%;
 }
-.row{
-padding-top: -5%;
+
+.row {
+  padding-top: -5%;
 }
- 
 </style>
