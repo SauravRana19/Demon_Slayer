@@ -10,6 +10,9 @@
     <div class="row footer">
       <h1>Green Monster</h1>
     </div>
+    <div class="row footer">
+      <h1>Green Monster</h1>
+    </div>
   </div>
 </template>
 <script>
