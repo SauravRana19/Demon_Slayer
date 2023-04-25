@@ -5,7 +5,7 @@
         Monster Slayer
       </h1>
       <div class="col-12 monsterhealthDiv text-center border rounded">
-        <h3 class="heading" >Monster Health</h3>
+        <h3 class="heading">Monster Health</h3>
         <div class="progress">
           <div
             class="progress-bar bg-success progress-bar-animated"
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="col-12 yourhealthDiv text-center border rounded">
-        <h3 class="heading" >Your Health</h3>
+        <h3 class="heading">Your Health</h3>
         <div class="progress progressbar progress-bar-animated">
           <div
             class="progress-bar bg-success"
@@ -44,10 +44,17 @@
         </button>
       </div>
       <div v-show="satrtagaindiv" class="buttonDiv">
-        <h1>start again</h1>
         <button type="button" class="btn butn" @click="startAgain">
           startAgain
         </button>
+        <h1 class="heading">!PlayAgain....</h1>
+      </div>
+      <div class="battelLogDiv">
+        <h2 class="Battelheading">Battel log</h2>
+        <div v-for="msg in battellog" :key="msg">
+          <p>monster health =={{ msg[0] }}</p>
+          <p>player health =={{ msg[1] }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -61,9 +68,10 @@ export default {
     let playerprogress = ref(100);
     let btndiv = ref(true);
     let satrtagaindiv = ref(false);
+    let battellog =ref([])
 
     watch(() => {
-      return divchange(monsterprogress.value);
+      return divchange(monsterprogress.value, playerprogress.value);
     });
     function attack() {
       monsterprogress.value = monsterprogress.value - 20;
@@ -80,10 +88,18 @@ export default {
     }
 
     function surrender() {
-      alert("you surrender");
+      playerprogress.value = 0;
+      // alert("you surrender");
     }
-    function divchange(value) {
-      if (value == 0) {
+    function divchange(value1, value2) {
+  
+      battellog.value.push([value1,value2]);
+      console.log(battellog.value);
+      if (value1 == 0) {
+        btndiv.value = false;
+        satrtagaindiv.value = true;
+      } else if (value2 == 0) {
+        alert("Player died");
         btndiv.value = false;
         satrtagaindiv.value = true;
       }
@@ -99,6 +115,7 @@ export default {
       playerprogress,
       btndiv,
       satrtagaindiv,
+      battellog,
       surrender,
       attack,
       specialAttack,
