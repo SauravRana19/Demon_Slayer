@@ -1,17 +1,40 @@
 <template>
-  <div class="container mt-5 px-5 p header">
-    <h1>Main Branch</h1>
+  <div class="container-fluid">
     <div class="row">
-      <h1>Monster Slayer</h1>
-    </div>
-    <div class="RedMonster">
-      <h1>Red Monster</h1>
-    </div>
-    <div class="GreenMonster">
-      <h1>Green Monster</h1>
-    </div>
-    <div class="BlueMonster">
-      <h1>Blue Monster</h1>
+      <h1 class="bg-danger text-white text-center monsterslayerDiv p-3">
+        Monster Slayer
+      </h1>
+      <div
+        class="col-12 monsterhealthDiv text-center border rounded"
+      >
+        <h1>Monster Health</h1>
+        <div class="progress">
+          <div
+            class="progress-bar bg-success"
+            role="progressbar"
+            style="width: 25%"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+      </div>
+      <div
+        class="col-12 yourhealthDiv text-center border rounded"
+      >
+        <h1>Your Health</h1>
+        <div class="progress progressbar">
+          <div
+            class="progress-bar bg-success"
+            role="progressbar"
+            style="width: 25%"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+      </div>
+      <div class="RedMonster"></div>
     </div>
   </div>
 </template>
@@ -21,40 +44,27 @@ export default {
   data() {},
 };
 </script>
-<style scoped>
-.header {
-  background-color: rgb(5, 4, 4);
-  border-style: outset;
-  position: relative;
-  text-align: center;
-  color: aliceblue;
-  padding-bottom: 1.5%;
+<style>
+.monsterslayerDiv {
+  height: 100px;
+  font-weight: bold;
+  font-family: monospace;
 }
-.RedMonster {
-  border-style: dashed;
-  background-color: rgb(162, 44, 44);
-  position: relative;
-  text-align: center;
-  color: aliceblue;
-  padding-bottom: 1.5%;
+.monsterhealthDiv {
+  margin: 0 0 0 30%;
+  height: 100px;
+  width: 40% !important ;
+  font-weight: bold;
+  font-family: fantasy;
 }
-.GreenMonster {
-  border-style: dashed;
-  background-color: rgb(10, 109, 41);
-  position: relative;
-  text-align: center;
-  color: aliceblue;
-  padding-bottom: 1.5%;
+.yourhealthDiv {
+  margin: 0.2% 0% 0% 30% !important;
+  height: 100px;
+  width: 40% !important;
+  font-weight: bold;
+  font-family: fantasy;
 }
-.BlueMonster{
-  border-style: dashed;
-  background-color: rgb(26, 40, 196);
-  position: relative;
-  text-align: center;
-  color: aliceblue;
-  padding-bottom: 1.5%;
-}
-.row {
-  padding-top: -5%;
+.progress {
+  height: 2rem !important;
 }
 </style>
