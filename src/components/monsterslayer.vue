@@ -1,13 +1,11 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <h1 class="bg-danger text-white text-center monsterslayerDiv p-3">
+      <h1 class="bg-danger text-white text-center monsterslayerDiv py-5">
         Monster Slayer
       </h1>
-      <div
-        class="col-12 monsterhealthDiv text-center border rounded"
-      >
-        <h1>Monster Health</h1>
+      <div class="col-12 monsterhealthDiv text-center border rounded">
+        <h4>Monster Health</h4>
         <div class="progress">
           <div
             class="progress-bar bg-success"
@@ -19,10 +17,8 @@
           ></div>
         </div>
       </div>
-      <div
-        class="col-12 yourhealthDiv text-center border rounded"
-      >
-        <h1>Your Health</h1>
+      <div class="col-12 yourhealthDiv text-center border rounded">
+        <h4>Your Health</h4>
         <div class="progress progressbar">
           <div
             class="progress-bar bg-success"
@@ -34,37 +30,32 @@
           ></div>
         </div>
       </div>
-      <div class="RedMonster"></div>
+    </div>
+    <div>
+      <div class="buttonDiv">
+        <button type="button" class="btn butn">Attack</button>
+        <button type="button" class="btn butn">Special Attack</button>
+        <br />
+        <button type="button" class="btn butn">Heal</button>
+        <button type="button" class="btn butn" @click="surrender()">
+          Surrender
+        </button>
+      </div>
     </div>
   </div>
 </template>
 <script>
 export default {
   name: "monster-slayer",
-  data() {},
+  setup() {
+    function surrender() {
+      alert("you surrender");
+    }
+
+    return {
+      surrender,
+    };
+  },
 };
 </script>
-<style>
-.monsterslayerDiv {
-  height: 100px;
-  font-weight: bold;
-  font-family: monospace;
-}
-.monsterhealthDiv {
-  margin: 0 0 0 30%;
-  height: 100px;
-  width: 40% !important ;
-  font-weight: bold;
-  font-family: fantasy;
-}
-.yourhealthDiv {
-  margin: 0.2% 0% 0% 30% !important;
-  height: 100px;
-  width: 40% !important;
-  font-weight: bold;
-  font-family: fantasy;
-}
-.progress {
-  height: 2rem !important;
-}
-</style>
+<style src="../assets/css/style.css"></style>
