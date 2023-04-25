@@ -1,34 +1,38 @@
 .monsterslayerDiv {
-    font-weight: bold;
-    font-family: monospace;
-  }
-  .monsterhealthDiv {
-    margin: 3% 0 0 30% !important;
-    height: 100px;
-    width: 40% !important ;
-    font-weight: bold;
-    font-family: fantasy;
-  }
-  .yourhealthDiv {
-    margin: 0.2% 0% 0% 30% !important;
-    height: 100px;
-    width: 40% !important;
-    font-weight: bold;
-    font-family: fantasy;
-  }
-  .progress {
-    height: 2rem !important;
-  }
-  .buttonDiv{
-    position: relative;
-    width: 25% !important ;
-    margin-left: 40%;
-  }
-  .butn{
-    background-color: #880D55 !important;
-    width: 45%;
-    height: 3.1rem;
-    margin: 7% 0 0 3%;
-    color: white !important;
-    border-radius: 10px !important;
-  }
+  font-weight: bold;
+  font-family: monospace;
+}
+.monsterhealthDiv {
+  margin: 3% 0 0 30% !important;
+  height: 100px;
+  width: 40% !important ;
+
+  font-size: 1vw !important;
+}
+.heading {
+  font-size: 2.5vw !important;
+}
+.yourhealthDiv {
+  margin: 0.2% 0% 0% 30% !important;
+  height: 100px;
+  width: 40% !important;
+
+  font-size: 1vw !important;
+}
+.progress {
+  height: 2rem !important;
+}
+.buttonDiv {
+  position: relative;
+  width: 25% !important ;
+  margin-left: 40%;
+}
+.butn {
+  background-color: #880d55 !important;
+  width: 45%;
+  height: 3.1rem;
+  margin: 7% 0 0 3%;
+  font-size: 1vw !important;
+  color: white !important;
+  border-radius: 10px !important;
+}
